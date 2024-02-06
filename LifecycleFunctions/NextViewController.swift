@@ -41,10 +41,48 @@ class NextViewController: UIViewController {
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(willEnterForeground),
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(didEnterBackground),
+            name: UIApplication.didEnterBackgroundNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIScene.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didEnterBackground), name: UIScene.didEnterBackgroundNotification, object: nil)
+    }
+    
+    @objc private func willEnterForeground() {
+        print("NextViewController: \(#function)")
+    }
+    
+    @objc private func didEnterBackground() {
+        print("NextViewController: \(#function)")
     }
     
     deinit {
         print("Deinit called here.")
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIApplication.didEnterBackgroundNotification,
+            object: nil)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIScene.willEnterForegroundNotification,
+            object: nil)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIScene.willEnterForegroundNotification,
+            object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
