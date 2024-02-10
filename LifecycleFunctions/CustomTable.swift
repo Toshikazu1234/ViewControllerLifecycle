@@ -12,6 +12,7 @@ class CustomTable: UITableView {
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
+        translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             topAnchor.constraint(equalTo: superview!.topAnchor),
             leadingAnchor.constraint(equalTo: superview!.leadingAnchor),
