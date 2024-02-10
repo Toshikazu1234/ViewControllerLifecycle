@@ -42,6 +42,7 @@ class NextViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
+        // Remember to remove observers in deinit!
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(willEnterForeground),
