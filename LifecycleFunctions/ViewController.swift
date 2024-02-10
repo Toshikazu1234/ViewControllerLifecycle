@@ -8,10 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private lazy var table: CustomTable = {
+        let table = CustomTable()
+        return table
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ViewController: \(#function)")
+        view.addSubview(table)
     }
     
     override func viewWillAppear(_ animated: Bool) {
