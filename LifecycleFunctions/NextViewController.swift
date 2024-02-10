@@ -19,6 +19,11 @@ class NextViewController: UIViewController {
         return label
     }()
     
+    private lazy var childVC: CustomChildVC = {
+        let vc = CustomChildVC()
+        return vc
+    }()
+    
     init(color: UIColor) {
         self.color = color
         super.init(nibName: nil, bundle: nil)
@@ -41,6 +46,14 @@ class NextViewController: UIViewController {
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             label.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+        ])
+        addChild(childVC)
+        view.addSubview(childVC.view)
+        NSLayoutConstraint.activate([
+            childVC.view.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            childVC.view.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            childVC.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            childVC.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5)
         ])
         
         // Remember to remove observers in deinit!
