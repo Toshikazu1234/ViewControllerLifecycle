@@ -17,6 +17,7 @@
 		5051D0282B729359001362D6 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051D0272B729359001362D6 /* CustomLabel.swift */; };
 		507498F92B77CBE700D2FC1E /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507498F82B77CBE600D2FC1E /* CustomTable.swift */; };
 		507498FB2B77CCD000D2FC1E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507498FA2B77CCD000D2FC1E /* CustomCell.swift */; };
+		507498FD2B77DE2900D2FC1E /* CustomChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507498FC2B77DE2900D2FC1E /* CustomChildVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5051D0272B729359001362D6 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		507498F82B77CBE600D2FC1E /* CustomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
 		507498FA2B77CCD000D2FC1E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		507498FC2B77DE2900D2FC1E /* CustomChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChildVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				5051D0272B729359001362D6 /* CustomLabel.swift */,
 				507498F82B77CBE600D2FC1E /* CustomTable.swift */,
 				507498FA2B77CCD000D2FC1E /* CustomCell.swift */,
+				507498FC2B77DE2900D2FC1E /* CustomChildVC.swift */,
 			);
 			path = LifecycleFunctions;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				5051D0122B72822E001362D6 /* AppDelegate.swift in Sources */,
 				5051D0142B72822E001362D6 /* SceneDelegate.swift in Sources */,
 				507498FB2B77CCD000D2FC1E /* CustomCell.swift in Sources */,
+				507498FD2B77DE2900D2FC1E /* CustomChildVC.swift in Sources */,
 				507498F92B77CBE700D2FC1E /* CustomTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
