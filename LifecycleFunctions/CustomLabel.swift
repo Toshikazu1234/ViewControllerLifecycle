@@ -32,3 +32,12 @@ class CustomLabel: UILabel {
         print("CustomLabel: \(#function)")
     }
 }
+
+class CustomView: UIView {
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        
+    }
+}
