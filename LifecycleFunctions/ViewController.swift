@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapNextButton(_ sender: UIBarButtonItem) {
-        let vc = NextViewController(color: .blue)
+        let vc = NextViewController(color: .systemGray4)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
